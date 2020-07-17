@@ -9,7 +9,6 @@ import (
 	"github.com/joho/godotenv"
 	"github.com/labstack/echo"
 	"github.com/labstack/echo/middleware"
-
 	cityHandler "github.com/roysitumorang/laukpauk-marketplace/modules/city/presenter"
 	provinceHandler "github.com/roysitumorang/laukpauk-marketplace/modules/province/presenter"
 	subdistrictHandler "github.com/roysitumorang/laukpauk-marketplace/modules/subdistrict/presenter"
@@ -18,12 +17,10 @@ import (
 
 func main() {
 	if err := godotenv.Load(".env"); err != nil {
-		log.Printf("can't load .env file")
-		os.Exit(1)
+		log.Fatalln("can't load .env file")
 	}
 	if err := db.Init(); err != nil {
-		log.Printf(err.Error())
-		os.Exit(2)
+		log.Fatalln(err.Error())
 	}
 	defer db.Conn.Close()
 	e := echo.New()
