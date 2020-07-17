@@ -7,8 +7,8 @@ import (
 	"os"
 
 	"github.com/joho/godotenv"
-	"github.com/labstack/echo"
-	"github.com/labstack/echo/middleware"
+	"github.com/labstack/echo/v4"
+	"github.com/labstack/echo/v4/middleware"
 	cityHandler "github.com/roysitumorang/laukpauk-marketplace/modules/city/presenter"
 	provinceHandler "github.com/roysitumorang/laukpauk-marketplace/modules/province/presenter"
 	subdistrictHandler "github.com/roysitumorang/laukpauk-marketplace/modules/subdistrict/presenter"

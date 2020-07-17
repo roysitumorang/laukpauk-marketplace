@@ -4,7 +4,7 @@ import (
 	"net/http"
 	"strconv"
 
-	"github.com/labstack/echo"
+	"github.com/labstack/echo/v4"
 	cityModel "github.com/roysitumorang/laukpauk-marketplace/modules/city/model"
 	provinceModel "github.com/roysitumorang/laukpauk-marketplace/modules/province/model"
 	"github.com/roysitumorang/laukpauk-marketplace/util/db"
